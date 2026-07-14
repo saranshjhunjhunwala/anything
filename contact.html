@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>Contact — Travel Explorer</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header><nav class="navbar">
+      <div class="icon">
+      <h2 style="padding-right:  20px;">GlobeTrek 🌍<h2>
+      </div>
+      <div class="navigation">
+      <ul>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="packages.html">Packages</a>
+      <a href="contact.html">Contact</a>
+      </ul>
+      </div>
+    </nav></header>
+
+  <main>
+    <section class="container">
+      <h2 class="section-title" style="text-align: center; padding-top: 50px; font-size: 30px;">Contact & Feedback</h2>
+
+      <div class="contact-wrap">
+        <!-- Corner details box -->
+        <aside class="contact-box">
+          <h3>Our Office</h3>
+          <p><strong>Email:</strong> info@travelexplorer.com</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Address:</strong> Connaught Place, New Delhi, India</p>
+          <hr style="margin:12px 0;">
+          <p><strong>Support Hours:</strong><br>Mon–Sat • 9:00–18:00</p>
+        </aside>
+
+        <!-- Feedback form (action points to #thankyou anchor) -->
+        <div class="contact-form">
+          <h3>Feedback Form</h3>
+          <!-- method="post" but there is no backend; form will navigate to anchor on submit -->
+          <form action="#thankyou" method="post" autocomplete="on">
+            <label class="sr-only">Name</label>
+            <input name="name" type="text" placeholder="Your Full Name" required>
+
+            <label class="sr-only">Phone</label>
+            <input name="phone" type="tel" placeholder="Your Phone Number" required>
+
+            <label class="sr-only">Email</label>
+            <input name="email" type="email" placeholder="Your Email Address" required>
+
+            <label class="sr-only">Feedback</label>
+            <textarea name="feedback" rows="5" placeholder="Your feedback (required)" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+          </form>
+
+          <!-- Thank you message appears when the form target is #thankyou -->
+          <div id="thankyou">✅ Thank you for your feedback! Our team will surely look after it.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Travel Explorer</footer>
+</body>
+</html>
